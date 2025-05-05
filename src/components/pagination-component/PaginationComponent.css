@@ -1,0 +1,17 @@
+.pagination-container {
+    margin: 50px auto;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.pagination-button {
+    width: 120px;
+    height: 40px;
+    background-color: deeppink;
+    border-radius: 15px;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+}
