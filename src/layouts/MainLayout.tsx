@@ -1,11 +1,9 @@
-import {Outlet} from "react-router";
-import {HeaderComponent} from "../components/header-component/HeaderComponent.tsx";
+import {MainPage} from "../pages/MainPage.tsx";
 
 export const MainLayout = () => {
     return (
         <>
-            <HeaderComponent/>
-            <Outlet/>
+            <MainPage/>
         </>
     );
 };

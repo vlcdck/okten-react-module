@@ -1,9 +1,9 @@
 import {useEffect} from 'react';
 import {useNavigate, useSearchParams} from 'react-router-dom';
-import {fetchSessionAndUser} from "../../redux/slices/authSlice.ts";
-import {useAppDispatch} from "../../redux/hooks/useAppDispatch.ts";
+import {authActions} from "../../redux/slices/authSlice.ts";
+import {useAppDispatch} from "../../redux/hooks/useAppDispatch.tsx";
 
-export const CallbackPage = () => {
+export const Callback = () => {
     const [params] = useSearchParams();
     const token = params.get('request_token');
     const dispatch = useAppDispatch();
@@ -11,7 +11,8 @@ export const CallbackPage = () => {
 
     useEffect(() => {
         if (token) {
-            dispatch(fetchSessionAndUser(token)).then(() => {
+            const sessionAndUser = dispatch(authActions.fetchSessionAndUser(token));
+                sessionAndUser.then(() => {
                 navigate('/');
             });
         }
