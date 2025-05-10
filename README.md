@@ -52,3 +52,5 @@ export default tseslint.config({
   },
 })
 ```
+
+VITE_KEY_API=f1cb2cce3945031eb16ef36c1a196cb2
