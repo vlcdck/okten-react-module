@@ -1,4 +1,6 @@
 /* Reset CSS */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -6,7 +8,9 @@
 }
 
 html, body {
+    padding-top: 35px;
     height: 100%;
+    background: #eee;
     /*font-family: Arial, sans-serif;*/
 }
 

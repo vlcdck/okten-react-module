@@ -1,0 +1,30 @@
+.search-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.search-input {
+    width: 400px;
+    height: 35px;
+    padding: 10px;
+    border-radius: 15px;
+    border: 0;
+}
+
+
+
+.search-input::placeholder {
+    color: #b2b0b0;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.search-btn {
+    background: deeppink;
+    width: 35px;
+    height: 35px;
+    padding: 3px;
+    border-radius: 50%;
+}

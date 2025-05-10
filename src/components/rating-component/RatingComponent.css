@@ -1,0 +1,24 @@
+.rating-container {
+    display: flex;
+    gap: 5px;
+    font-size: 24px;
+    color: #facc15;
+}
+
+.star {
+    cursor: pointer;
+    transition: color 0.2s, opacity 0.2s;
+}
+
+.star.active {
+    color: #facc15; /* Золотой для активных звёзд */
+}
+
+.star.loading {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.star:hover {
+    color: #ffdd57; /* Подсветка при наведении */
+}
